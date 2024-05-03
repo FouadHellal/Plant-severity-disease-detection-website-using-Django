@@ -1,0 +1,7 @@
+
+from django.db import models
+
+class UploadedImage(models.Model):
+    image = models.ImageField(upload_to='images/')
+    percentage = models.FloatField(null=True) 
+    

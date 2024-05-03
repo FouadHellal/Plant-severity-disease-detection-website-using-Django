@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ZYRAI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Couleur de fond */
+            color: #343a40; /* Couleur du texte */
+            padding-top: 60px; /* Espace pour la barre de navigation */
+        }
+        
+        .navbar {
+            background-color: #343a40 !important; /* Couleur de fond de la barre de navigation */
+            min-height: 50px; /* Réduire la hauteur minimale de la barre de navigation */
+            max-height: 70px;
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .nav-link {
+            color: #ffffff !important; /* Couleur des liens dans la barre de navigation */
+        }
+        
+        .container {
+            margin-top: 50px; /* Marge en haut pour centrer le contenu */
+        }
+        .containerr{
+            display: flex;
+            justify-content : center; /* Marge en haut pour centrer le contenu */
+            margin-left: 50px;
+        }
+        
+        
+        .about-content {
+            background-color: #ffffff; /* Couleur de fond de la zone de contenu */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Effet d'ombre */
+            padding: 20px;
+            margin-bottom: 50px; /* Marge en bas pour l'équilibre visuel */
+        }
+        
+        .about-content h2 {
+            color: #007bff; /* Couleur du titre */
+            border-bottom: 2px solid #007bff; /* Barre de séparation sous le titre */
+            padding-bottom: 10px; /* Espace sous le titre */
+            margin-bottom: 20px; /* Marge en bas pour l'équilibre visuel */
+        }
+        
+        .about-content p {
+            line-height: 1.6; /* Hauteur de ligne pour une lecture facile */
+        }
+        
+        footer {
+            background-color: #343a40 !important; /* Dark footer background */
+            color: #ffffff; /* White footer text */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .footer p {
+            margin-bottom: 0;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-1">
+        <div class="containerr">
+            <a class="navbar-brand" href="{% url 'upload_image' %}"> ZYRAI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'upload_image' %}">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'chat' %}">Chat</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="about-content">
+            <h2>About ZYRAI</h2>
+            <p>
+                ZYRAI is an innovative platform designed to help identify plant diseases using artificial intelligence. Our goal is to provide farmers and agriculture professionals with a quick and reliable tool to detect and diagnose plant issues, allowing for timely intervention and improved crop yield.
+            </p>
+            <p>
+                Our AI model is trained on a diverse dataset of plant images, enabling it to recognize a wide range of diseases and abnormalities. By simply uploading an image of a plant leaf, users can receive instant feedback on the health status of their plants, along with recommendations for treatment and management.
+            </p>
+            <p>
+                At ZYRAI, we are committed to leveraging the latest advancements in AI technology to address real-world challenges in agriculture. We believe that by harnessing the power of AI, we can revolutionize plant disease diagnosis and contribute to the sustainability and efficiency of global food production.
+            </p>
+        </div>
+    </div>
+    
+    <footer class="py-2 bg-dark fixed-bottom py-1">
+        <div class="container">
+            <p class="m-0 text-center text-white">ZYRAI &copy; | Fouad HELLAL 2024</p>
+        </div>
+    </footer>
+
+    <!-- Intégration de Bootstrap JavaScript pour le fonctionnement des composants -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
