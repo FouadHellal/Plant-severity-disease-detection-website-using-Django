@@ -19,12 +19,12 @@ Follow these steps to set up LeafAI-Django locally:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/username/LeafAI-Django.git
+    git clone https://github.com/username/[Plant-severity-disease-detection-website-using-Django.git]/
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd LeafAI-Django
+    cd Plant-severity-disease-detection-website-using-Django
     ```
 
 3. Install the required dependencies:
@@ -34,7 +34,7 @@ Follow these steps to set up LeafAI-Django locally:
 
 ## Usage
 
-To run LeafAI-Django locally, follow these steps:
+To run Plant-severity-disease-detection-website-using-Django.git locally, follow these steps:
 
 1. Navigate to the project directory if you haven't already.
 2. Run the Django development server:
@@ -46,13 +46,12 @@ To run LeafAI-Django locally, follow these steps:
 ## How It Works
 
 1. **Image Upload**: Users upload images of plant leaves suspected to be affected by diseases to the ZyrAI platform.
-  
 
-3. **Image Processing**: The uploaded images are processed using advanced computer vision techniques to extract relevant features and identify disease patterns.
+2. **Image Processing**: The uploaded images are processed using advanced computer vision techniques to extract relevant features and identify disease patterns.
 
-4. **Machine Learning Analysis**: ZyrAI employs machine learning algorithms trained on extensive datasets of labeled leaf images to analyze and classify diseases accurately.
+3. **Machine Learning Analysis**: ZyrAI employs machine learning algorithms trained on extensive datasets of labeled leaf images to analyze and classify diseases accurately.
 
-5. **Result Presentation**: The platform presents users with comprehensive diagnostic reports, including disease severity predictions, disease zone delineations, and recommended actions for disease management.
+4. **Result Presentation**: The platform presents users with comprehensive diagnostic reports, including disease severity predictions, disease zone delineations, and recommended actions for disease management.
 
 ## Benefits
 
