@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .forms import UploadImageForm
 from .utils import load_and_prepare_image
+from .utils import load_and_prepare_image,create_mask
 import cv2
 import numpy as np
 from .models import UploadedImage
@@ -33,6 +34,7 @@ def chat_view(request):
 def about(request):
     return render(request, 'about.html')
 
+
 def upload_image(request):
     if request.method == 'POST':
         form = UploadImageForm(request.POST, request.FILES)
@@ -41,13 +43,12 @@ def upload_image(request):
             uploaded_file = request.FILES['image']
             file_path = os.path.join(settings.MEDIA_ROOT, uploaded_file.name)
             
-            
             with open(file_path, 'wb') as f:
                 for chunk in uploaded_file.chunks():
                     f.write(chunk)
+            
             # Passer le chemin du fichier enregistré à la fonction remove_background
             image = cv2.imread(file_path)
-
             resized_image = cv2.resize(image, (224, 224))
 
             # Image sans background
@@ -75,21 +76,20 @@ def upload_image(request):
             severity = round(severityy, 1)
             print("Sévérité U-net : {:.2f}%".format(severity))
             
+            # Créer le nouveau masque
+            new_mask = create_mask(rgb_no_bg, binarized_mask, alpha_mask)
             
-            uploaded_image = UploadedImage(image=uploaded_file,
-                                            percentage=severity)
+            uploaded_image = UploadedImage(image=uploaded_file, percentage=severity)
             uploaded_image.save()
 
             image_url = os.path.join(settings.MEDIA_URL, uploaded_file.name)
-            
-            # Construire l'URL du masque malade
             mask_malade_url = os.path.join(settings.MEDIA_URL, 'mask_malade_' + uploaded_file.name)
             
-            # Enregistrer le masque malade sur le disque
-            cv2.imwrite(os.path.join(settings.MEDIA_ROOT, 'mask_malade_' + uploaded_file.name), binarized_mask * 255)
+            # Enregistrer le nouveau masque sur le disque
+            cv2.imwrite(os.path.join(settings.MEDIA_ROOT, 'mask_malade_' + uploaded_file.name), new_mask)
 
             # Passer les données au modèle de template
-            return render(request, 'upload_result.html', {'image_url': os.path.join(settings.MEDIA_URL, uploaded_file.name),
+            return render(request, 'upload_result.html', {'image_url': image_url,
                                                            'pourcentage_pixels_zone_malade': severity,
                                                            'mask_malade_url': mask_malade_url})
     else:
