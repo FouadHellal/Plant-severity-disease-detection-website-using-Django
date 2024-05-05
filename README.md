@@ -8,7 +8,9 @@ ZYRAI is an AI-powered leaf disease detection platform built with Django. It aim
 - **Leaf Disease Detection**: ZyrAI utilizes state-of-the-art deep learning models to accurately identify and classify diseases affecting plant leaves. This enables farmers to swiftly identify potential threats to crop health and take proactive measures to mitigate them.
 
 - **U-NET Image Segmentation**: The platform employs U-NET, a convolutional neural network architecture designed for biomedical image segmentation tasks. This allows ZyrAI to generate precise disease masks, outlining the areas of the leaf affected by diseases with high granularity.
+  
   **Check it out on my other Repo here :** `https://github.com/FouadHellal/U-net-for-plant-segmentation.git
+
   **Examples :**
   
 ![49 46537259417668_469](https://github.com/FouadHellal/Plant-severity-disease-detection-website-using-Django/assets/113594352/1fab202d-7236-4f71-8c07-0da07234c467)
