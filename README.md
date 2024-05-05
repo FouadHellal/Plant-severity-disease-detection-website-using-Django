@@ -1,12 +1,19 @@
 # ZYRAI
 
 ZYRAI is an AI-powered leaf disease detection platform built with Django. It aims to revolutionize farming practices by providing farmers with an efficient and accurate tool to diagnose and manage plant health issues. By leveraging advanced machine learning algorithms, ZyrAI offers instant disease severity predictions and identifies disease zones in leaf images using U-NET architecture for image segmentation.
+![image](https://github.com/FouadHellal/Plant-severity-disease-detection-website-using-Django/assets/113594352/f3952152-8385-4681-94bb-16e9cd0a9c84)
 
 ## Features
 
 - **Leaf Disease Detection**: ZyrAI utilizes state-of-the-art deep learning models to accurately identify and classify diseases affecting plant leaves. This enables farmers to swiftly identify potential threats to crop health and take proactive measures to mitigate them.
 
 - **U-NET Image Segmentation**: The platform employs U-NET, a convolutional neural network architecture designed for biomedical image segmentation tasks. This allows ZyrAI to generate precise disease masks, outlining the areas of the leaf affected by diseases with high granularity.
+- **Check it out on my other Repo here :** `https://github.com/FouadHellal/U-net-for-plant-segmentation.git
+- **Examples :**
+![49 46537259417668_469](https://github.com/FouadHellal/Plant-severity-disease-detection-website-using-Django/assets/113594352/1fab202d-7236-4f71-8c07-0da07234c467)
+![mask_malade_49 46537259417668_469](https://github.com/FouadHellal/Plant-severity-disease-detection-website-using-Django/assets/113594352/3a29e629-5ad9-48ff-815c-03351cfae673)
+![56](https://github.com/FouadHellal/Plant-severity-disease-detection-website-using-Django/assets/113594352/fbab854d-ca7d-4f1f-b113-70bb1c00e863)
+![mask_malade_56](https://github.com/FouadHellal/Plant-severity-disease-detection-website-using-Django/assets/113594352/be1d4f6a-f0e1-42b4-9a40-89464a02cf8e)
 
 - **User-Friendly Interface**: ZyrAI features an intuitive and user-friendly interface, making it accessible to farmers of all technical backgrounds. The platform's simple yet powerful design ensures ease of use, allowing users to upload leaf images effortlessly and obtain accurate diagnostic results.
 
