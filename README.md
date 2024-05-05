@@ -9,7 +9,10 @@ ZYRAI is an AI-powered leaf disease detection platform built with Django. It aim
 
 - **U-NET Image Segmentation**: The platform employs U-NET, a convolutional neural network architecture designed for biomedical image segmentation tasks. This allows ZyrAI to generate precise disease masks, outlining the areas of the leaf affected by diseases with high granularity.
   
-  **Check it out on my other Repo here :** `https://github.com/FouadHellal/U-net-for-plant-segmentation.git
+  **Check it out on my other Repo here :**
+  ```bash
+     https://github.com/FouadHellal/U-net-for-plant-segmentation.git
+  ```
 
   **Examples :**
   
