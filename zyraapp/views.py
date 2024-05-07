@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from .forms import UploadImageForm
-from .utils import load_and_prepare_image
 from .utils import load_and_prepare_image,create_mask
 import cv2
 import numpy as np

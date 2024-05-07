@@ -1,6 +1,9 @@
 # ZYRAI
 
 - [![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10-blue.svg)](https://www.python.org/)
+- [![Django](https://img.shields.io/badge/django-%3Cversion%3E-blue)](https://www.djangoproject.com/)
+- [![rembg](https://img.shields.io/badge/rembg-2.0.28-blue)](https://pypi.org/project/rembg/)
+- [Google AI Studio API Key](https://aistudio.google.com/app/apikey)
 
 
 ZYRAI is an AI-powered leaf disease detection platform built with Django. It aims to revolutionize farming practices by providing farmers with an efficient and accurate tool to diagnose and manage plant health issues. By leveraging advanced machine learning algorithms, ZyrAI offers instant disease severity predictions and identifies disease zones in leaf images using U-NET architecture for image segmentation.
