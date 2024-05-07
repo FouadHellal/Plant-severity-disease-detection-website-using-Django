@@ -3,33 +3,8 @@
 - [![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10-blue.svg)](https://www.python.org/)
 - [![Django](https://img.shields.io/badge/django-5.0.6-blue)](https://www.djangoproject.com/download/)
 - [![rembg](https://img.shields.io/badge/rembg-2.0.28-blue)](https://pypi.org/project/rembg/)
-- [![Google AI Studio API Key](https://img.shields.io/badge/Gemini-blue)](https://aistudio.google.com/app/apikey)
-- [![Repository U-net for plant segmentation](https://img.shields.io/badge/UNet-purple)](https://github.com/FouadHellal/U-net-for-plant-segmentation.git)
+- [Google AI Studio API Key](https://aistudio.google.com/app/apikey)
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [How It Works](#how-it-works)
-- [Benefits](#benefits)
-- [Future Enhancements](#future-enhancements)
-- [Contribution](#contribution)
-- [Technical Tasks](#technical-tasks)
-- [Contributing](#contributing)
-- [License](#license)
-
-
-## Introduction
-## Features
-## Installation
-## Usage
-## How It Works
-## Benefits
-## Future Enhancements
-## Contribution
-## Technical Tasks
-## Contributing
-## License
 
 ZYRAI is an AI-powered leaf disease detection platform built with Django. It aims to revolutionize farming practices by providing farmers with an efficient and accurate tool to diagnose and manage plant health issues. By leveraging advanced machine learning algorithms, ZyrAI offers instant disease severity predictions and identifies disease zones in leaf images using U-NET architecture for image segmentation.
 ![image](https://github.com/FouadHellal/Plant-severity-disease-detection-website-using-Django/assets/113594352/f3952152-8385-4681-94bb-16e9cd0a9c84)
