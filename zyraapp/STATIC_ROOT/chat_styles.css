@@ -1,0 +1,67 @@
+/* chat_styles.css */
+
+#chat-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#question {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: all 0.3s;
+    outline: none;
+}
+
+#question:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#chat-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#chat-form button:hover {
+    background-color: #0056b3;
+}
+
+#chat-history {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 80%;
+    margin: auto;
+}
+
+#chat-history p {
+    margin: 5px 0;
+}
+
+.waiting {
+    font-style: italic;
+    color: #888;
+}
+
+footer {
+    background-color: #343a40 !important; /* Dark footer background */
+    color: #ffffff; /* White footer text */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin-bottom: 0;
+}

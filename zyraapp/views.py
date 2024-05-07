@@ -15,10 +15,7 @@ TF_ENABLE_ONEDNN_OPTS=0
 from django.shortcuts import render
 from django.http import HttpResponse
 import google.generativeai as genai
-from dotenv import load_dotenv
-
-load_dotenv()
-API_KEY=os.getenv('API_KEY')
+API_KEY='AIzaSyD408QlleK4lAcTCZcU3kKzPWmIuC30oRI'
 
 def chat_view(request):
     genai.configure(api_key=API_KEY)

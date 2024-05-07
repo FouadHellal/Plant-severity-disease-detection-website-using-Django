@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark gray text */
+}
+
+.navbar {
+    background-color: #343a40 !important; /* Dark navbar background */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #ffffff !important; /* White nav links */
+}
+
+.upload-form {
+    background-color: #ffffff; /* White background for upload form */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Shadow effect */
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.upload-btn {
+    width: 100%;
+}
+
+#aboutContent {
+    display: none; /* Initially hide the About section */
+    margin-top: 50px;
+}
+
+#aboutContent div {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #343a40 !important; /* Dark footer background */
+    color: #ffffff; /* White footer text */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
