@@ -7,7 +7,7 @@
 - [![Repository U-net for plant segmentation](https://img.shields.io/badge/UNet-purple)](https://github.com/FouadHellal/U-net-for-plant-segmentation.git)
 
 
-
+## Synopsis 
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -22,7 +22,10 @@
 
 ZYRAI is an AI-powered leaf disease detection platform built with Django. It aims to revolutionize farming practices by providing farmers with an efficient and accurate tool to diagnose and manage plant health issues. By leveraging advanced machine learning algorithms, ZyrAI offers instant disease severity predictions and identifies disease zones in leaf images using U-NET architecture for image segmentation.
 
-![image](https://github.com/FouadHellal/Plant-severity-disease-detection-website-using-Django/assets/113594352/f3952152-8385-4681-94bb-16e9cd0a9c84)
+![image](https://github.com/FouadHellal/Plant-severity-disease-detection-website-using-Django/assets/113594352/10303069-e2ed-4f38-ac08-2fdee48bbd14)
+<div align="center">
+  <img src="https://github.com/FouadHellal/Plant-severity-disease-detection-website-using-Django/assets/113594352/b41873ec-eff6-4ed4-8ec2-ec025b66d8e3" alt="image" width="50%">
+</div>
 
 
 ## Features
@@ -39,9 +42,10 @@ or clone it from here :
   ```
 
   **Examples :**
-  
-![56](https://github.com/FouadHellal/Plant-severity-disease-detection-website-using-Django/assets/113594352/fbab854d-ca7d-4f1f-b113-70bb1c00e863)
-![mask_malade_56](https://github.com/FouadHellal/Plant-severity-disease-detection-website-using-Django/assets/113594352/be1d4f6a-f0e1-42b4-9a40-89464a02cf8e)
+<p align="center">
+  <img src="https://github.com/FouadHellal/Plant-severity-disease-detection-website-using-Django/assets/113594352/fbab854d-ca7d-4f1f-b113-70bb1c00e863" alt="56" width="17%">
+  <img src="https://github.com/FouadHellal/Plant-severity-disease-detection-website-using-Django/assets/113594352/be1d4f6a-f0e1-42b4-9a40-89464a02cf8e" alt="mask_malade_56" width="17%">
+</p>
 
 - **User-Friendly Interface**: ZyrAI features an intuitive and user-friendly interface, making it accessible to farmers of all technical backgrounds. The platform's simple yet powerful design ensures ease of use, allowing users to upload leaf images effortlessly and obtain accurate diagnostic results.
   
@@ -56,7 +60,7 @@ Follow these steps to set up LeafAI-Django locally:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/username/[Plant-severity-disease-detection-website-using-Django.git]/
+    git clone https://github.com/FouadHellal/Plant-severity-disease-detection-website-using-Django.git
     ```
 
 2. Navigate to the project directory:
