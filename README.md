@@ -112,10 +112,6 @@ To run Plant-severity-disease-detection-website-using-Django.git locally, follow
 
 - **Localized Recommendations**: Providing region-specific recommendations tailored to local climate, soil conditions, and prevalent diseases.
 
-## Contribution
-
-Contributions to ZyrAI are welcome! Whether you're interested in improving the user interface, enhancing machine learning models, or adding new features, feel free to contribute to the project by forking the repository, making your changes, and submitting a pull request.
-
 ## Technical Tasks
 
 - **Improve Model Accuracy**: Continuously train and fine-tune the deep learning models to improve disease detection accuracy and reduce false positives.
