@@ -1,11 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Light gray background */
-    color: #343a40; /* Dark gray text */
-}
-
-.navbar {
-    background-color: #343a40 !important; /* Dark navbar background */
+    color: #343a40; 
 }
 
 .navbar-brand {
@@ -22,7 +17,7 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Shadow effect */
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .upload-btn {
@@ -31,7 +26,7 @@ body {
 
 #aboutContent {
     display: none; /* Initially hide the About section */
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 #aboutContent div {

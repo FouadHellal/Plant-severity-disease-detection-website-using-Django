@@ -1,5 +1,3 @@
-/* chat_styles.css */
-
 #chat-form {
     text-align: center;
     margin-top: 20px;
@@ -53,7 +51,6 @@
     font-style: italic;
     color: #888;
 }
-
 footer {
     background-color: #343a40 !important; /* Dark footer background */
     color: #ffffff; /* White footer text */
@@ -65,3 +62,4 @@ footer {
 .footer p {
     margin-bottom: 0;
 }
+

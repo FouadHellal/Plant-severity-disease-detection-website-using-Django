@@ -5,72 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About ZYRAI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa; /* Couleur de fond */
-            color: #343a40; /* Couleur du texte */
-            padding-top: 60px; /* Espace pour la barre de navigation */
-        }
-        
-        .navbar {
-            background-color: #343a40 !important; /* Couleur de fond de la barre de navigation */
-            min-height: 50px; /* Réduire la hauteur minimale de la barre de navigation */
-            max-height: 70px;
-        }
-        
-        .navbar-brand {
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-        
-        .nav-link {
-            color: #ffffff !important; /* Couleur des liens dans la barre de navigation */
-        }
-        
-        .container {
-            margin-top: 50px; /* Marge en haut pour centrer le contenu */
-        }
-        .containerr{
-            display: flex;
-            justify-content : center; /* Marge en haut pour centrer le contenu */
-            margin-left: 50px;
-        }
-        
-        
-        .about-content {
-            background-color: #ffffff; /* Couleur de fond de la zone de contenu */
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Effet d'ombre */
-            padding: 20px;
-            margin-bottom: 50px; /* Marge en bas pour l'équilibre visuel */
-        }
-        
-        .about-content h2 {
-            color: #007bff; /* Couleur du titre */
-            border-bottom: 2px solid #007bff; /* Barre de séparation sous le titre */
-            padding-bottom: 10px; /* Espace sous le titre */
-            margin-bottom: 20px; /* Marge en bas pour l'équilibre visuel */
-        }
-        
-        .about-content p {
-            line-height: 1.6; /* Hauteur de ligne pour une lecture facile */
-        }
-        
-        footer {
-            background-color: #343a40 !important; /* Dark footer background */
-            color: #ffffff; /* White footer text */
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        
-        .footer p {
-            margin-bottom: 0;
-        }
-        
-        
-    </style>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'about.css' %}">
 </head>
 <body>
     <!-- Barre de navigation -->
