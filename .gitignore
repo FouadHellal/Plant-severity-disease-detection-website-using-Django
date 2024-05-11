@@ -2,3 +2,4 @@
 zyraapp/api.env
 zyraapp/STATIC_ROOT/admin
 /images
+zyraapp/vit_classifier_unet.weights.h5
