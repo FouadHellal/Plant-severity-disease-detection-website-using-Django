@@ -2,6 +2,21 @@ body {
     padding-top: 60px; /* Pour laisser de l'espace pour la barre de navigation */
 }
 
+.navbar {
+    background-color: #343a40 !important; /* Couleur de fond de la barre de navigation */
+    min-height: 50px; /* Réduire la hauteur minimale de la barre de navigation */
+    max-height: 70px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #ffffff !important; /* Couleur des liens dans la barre de navigation */
+}
+
 .container {
     display: flex;
     flex-direction: column;

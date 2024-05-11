@@ -10,9 +10,6 @@ from rembg import remove
 from .ViT import create_vit_classifier
 model = load_model('zyraapp/modelunetcoffee.h5')
 import os
-TF_ENABLE_ONEDNN_OPTS=0
-
-from django.shortcuts import render
 from django.http import HttpResponse
 import google.generativeai as genai
 API_KEY='HAHA GOT YA!'
@@ -53,68 +50,6 @@ def classify_image_with_vit(image):
     severity_vit = predicted_class_vit.item()  # Sévérité prédite par ViT
 
     return severity_vit
-
-
-# def upload_image(request):
-#     if request.method == 'POST':
-#         form = UploadImageForm(request.POST, request.FILES)
-#         if form.is_valid():
-#             # Enregistrer le fichier téléchargé sur le disque
-#             uploaded_file = request.FILES['image']
-#             file_path = os.path.join(settings.MEDIA_ROOT, uploaded_file.name)
-            
-#             with open(file_path, 'wb') as f:
-#                 for chunk in uploaded_file.chunks():
-#                     f.write(chunk)
-            
-#             # Passer le chemin du fichier enregistré à la fonction remove_background
-#             image = cv2.imread(file_path)
-#             resized_image = cv2.resize(image, (224, 224))
-
-#             # Image sans background
-#             rgb_no_bg = remove(resized_image)
-            
-#             # Calculer la surface de la feuille
-#             surface = np.sum(rgb_no_bg[:, :, 3] != 0)
-#             # Créer un masque pour les pixels où l'alpha est différent de zéro
-#             alpha_mask = (rgb_no_bg[:, :, 3] != 0)
-
-#             # Préparer l'image pour la prédiction
-#             image_to_predict = load_and_prepare_image(file_path)
-
-#             # Prédire le masque
-#             predicted_mask = model.predict(image_to_predict)[0]
-
-#             # Binariser le masque
-#             binarized_mask = (predicted_mask > 0.5).astype(int)
-
-#             # Calculer le nombre de pixels malades
-#             num_white_pixels = np.sum((binarized_mask[:,:,0] == 1) & alpha_mask[True])
-
-#             # Calculer le pourcentage de zone malade sur la surface de la feuille
-#             severityy = (num_white_pixels / surface) * 100
-#             severity = round(severityy, 1)
-#             print("Sévérité U-net : {:.2f}%".format(severity))
-            
-#             # Créer le nouveau masque
-#             new_mask = create_mask(rgb_no_bg, binarized_mask, alpha_mask)
-            
-#             uploaded_image = UploadedImage(image=uploaded_file, percentage=severity)
-#             uploaded_image.save()
-
-#             image_url = os.path.join(settings.MEDIA_URL, uploaded_file.name)
-#             mask_malade_url = os.path.join(settings.MEDIA_URL, 'mask_malade_' + uploaded_file.name)
-            
-#             # Enregistrer le nouveau masque sur le disque
-#             cv2.imwrite(os.path.join(settings.MEDIA_ROOT, 'mask_malade_' + uploaded_file.name), new_mask)
-
-#             # Passer les données au modèle de template
-#             return render(request, 'upload_result.html', {'image_url': image_url,
-#                                                            'pourcentage_pixels_zone_malade': severity,
-#                                                            'mask_malade_url': mask_malade_url})
-#     else:
-#         form = UploadImageForm()
-#     return render(request, 'upload_form.html', {'form': form})
 
 def upload_image(request):
     if request.method == 'POST':
