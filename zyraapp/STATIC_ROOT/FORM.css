@@ -1,69 +1,12 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Couleur de fond */
-    color: #343a40; /* Couleur du texte */
-    padding-top: 60px; /* Espace pour la barre de navigation */
-}
-.navbar {
-    background-color: #343a40 !important; /* Couleur de fond de la barre de navigation */
-    min-height: 50px; /* Réduire la hauteur minimale de la barre de navigation */
-    max-height: 70px;
-}
-
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.nav-link {
-    color: #ffffff !important; /* Couleur des liens dans la barre de navigation */
-}
-
-.container {
+.containerr {
     background-color: #ffffff; /* White background for upload form */
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Shadow effect */
     padding: 50px;
-    margin-top: 500px;
     display: flex; /* Utilisation de flexbox */
     justify-content: center; /* Centrer horizontalement */
-}
-
-.upload-btn {
-    width: 100%;
-}
-
-#aboutContent {
-    display: none; /* Initially hide the About section */
-    margin-top: 100px;
-}
-
-#aboutContent div {
-    margin-bottom: 20px;
-}
-
-
-footer {
-    background-color: #343a40 !important; /* Dark footer background */
-    color: #ffffff; /* White footer text */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer p {
-    margin-bottom: 0;
-}
-
-/* Style pour les carrés */
-.square {
-    width: 50px;
-    height: 50px;
-    background-color: #007bff;
-    margin: 10px;
-}
-
-.button2 {
+  }
+  .button2 {
     display: inline-block;
     transition: all 0.2s ease-in;
     position: relative;
@@ -225,3 +168,95 @@ footer {
   .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
     background-color: #ff0000;
   }
+
+  @keyframes blinkCursor {
+    50% {
+      border-right-color: transparent;
+    }
+  }
+  
+  @keyframes typeAndDelete {
+    0%,
+    10% {
+      width: 0;
+    }
+    45%,
+    55% {
+      width: 6.2em;
+    } /* adjust width based on content */
+    90%,
+    100% {
+      width: 0;
+    }
+  }
+  
+  .terminal-loader {
+    border: 0.1em solid #333;
+    background-color: #1a1a1a;
+    color: #0f0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1em;
+    padding: 1.5em 1em;
+    width: 12em;
+    margin: 100px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .terminal-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1.5em;
+    background-color: #333;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 0 0.4em;
+    box-sizing: border-box;
+  }
+  
+  .terminal-controls {
+    float: right;
+  }
+  
+  .control {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    margin-left: 0.4em;
+    border-radius: 50%;
+    background-color: #777;
+  }
+  
+  .control.close {
+    background-color: #e33;
+  }
+  
+  .control.minimize {
+    background-color: #ee0;
+  }
+  
+  .control.maximize {
+    background-color: #0b0;
+  }
+  
+  .terminal-title {
+    float: left;
+    line-height: 1.5em;
+    color: #eee;
+  }
+  
+  .text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.2em solid green; /* Cursor */
+    animation: typeAndDelete 4s steps(11) infinite,
+      blinkCursor 0.5s step-end infinite alternate;
+    margin-top: 1.5em;
+  }
+  
