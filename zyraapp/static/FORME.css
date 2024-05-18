@@ -168,7 +168,7 @@
   .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
     background-color: #ff0000;
   }
-
+  
   @keyframes blinkCursor {
     50% {
       border-right-color: transparent;
@@ -204,6 +204,8 @@
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
+    display: none; /* Initially hide the loader */
+
   }
   
   .terminal-header {
@@ -217,6 +219,7 @@
     border-top-right-radius: 4px;
     padding: 0 0.4em;
     box-sizing: border-box;
+
   }
   
   .terminal-controls {
@@ -260,3 +263,110 @@
     margin-top: 1.5em;
   }
   
+  .card {
+    padding: 20px;
+    display: inline-block; /* Pour aligner les cartes côte à côte */
+    width: 190px;
+    height: 254px;
+    background: rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: all ease-in-out 0.3s;
+    margin: 0 10px; /* Espace entre les cartes */
+    position: relative;
+    bottom: 100px; /* Ajustez cette valeur selon votre besoin */
+}
+
+
+
+  .card:hover {
+    background-color: #fdfdfd;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  
+  .palette {
+    display: flex;
+    height: 500px;
+    width: 99%;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+    padding-bottom: 100px; /* Add padding to ensure space for the footer */
+  }
+  
+  .color {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Allow vertical stacking of elements */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    position: relative; /* Positioning context for absolute elements */
+    text-align: center;
+  }
+  
+  .color .default-text {
+    font-size: 2em; /* Increase the font size */
+    margin-bottom: 10px; /* Space between text and description */
+  }
+  
+  .color .color-description {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+  
+  .color:hover {
+    flex: 2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .color:hover .color-description {
+    opacity: 1;
+  }
+  
+  .color:nth-child(1) {
+    background: #264653;
+  }
+  
+  .color:nth-child(2) {
+    background: #2a9d8f;
+  }
+  
+  .color:nth-child(3) {
+    background: #e9c46a;
+  }
+  
+  .color:nth-child(4) {
+    background: #f4a261;
+  }
+  
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container-flex {
+    flex: 1;
+    margin: 0 auto;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

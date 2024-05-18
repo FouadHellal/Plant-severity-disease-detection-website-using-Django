@@ -6,6 +6,8 @@
             display: flex;
             justify-content : center; /* Marge en haut pour centrer le contenu */
             margin-left: 50px;
+            position: relative;
+            padding-bottom: 100px; /* Add padding to ensure space for the footer */
         }
         
         

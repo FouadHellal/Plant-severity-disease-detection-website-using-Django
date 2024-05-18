@@ -6,7 +6,7 @@
     <title>Upload Image</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'FORM.css' %}"> 
+    <link rel="stylesheet" href="{% static 'FORME.css' %}"> 
 </head>
 <body>
     <!-- Barre de navigation Bootstrap -->
@@ -35,62 +35,65 @@
         <p>testttttttt </p>
     </div>
 
-
-    <div class="containerr">
-      <div class="upload-form" id="uploadForm">
-          <center>
-              <h2 class="text-center mb-4">Upload Image</h2>
-              <form method="post" enctype="multipart/form-data">
-                  {% csrf_token %}
-                  {{ form.as_p }}
-                  <center><button type="submit" class="button2" id="uploadBtn">Upload</button></center>
-                </form>
-          </center>
+    <body>
+      <div class="containerr">
+          <div class="upload-form" id="uploadForm">
+              <center>
+                  <h2 class="text-center mb-4">Upload Image</h2>
+                  <form method="post" enctype="multipart/form-data">
+                      {% csrf_token %}
+                      {{ form.as_p }}
+                      <center><button type="submit" class="button2" id="uploadBtn">Upload</button></center>
+                  </form>
+              </center>
+          </div>
       </div>
-  </div>
-  
-  <div class="terminal-loader" style="display:none; opacity:0;">
-    <div class="terminal-header">
-        <div class="terminal-title">Status</div>
-        <div class="terminal-controls">
-            <div class="control close"></div>
-            <div class="control minimize"></div>
-            <div class="control maximize"></div>
-        </div>
-    </div>
-    <div class="text">Loading...</div>
-  </div>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const uploadBtn = document.getElementById('uploadBtn');
-    const terminalLoader = document.querySelector('.terminal-loader');
-
-    uploadBtn.addEventListener('click', function(event) {
-        // Pour éviter le comportement par défaut du formulaire
-        event.preventDefault();
-        
-        // Affiche le loader
-        terminalLoader.style.display = 'block';
-
-        // Pour forcer le reflow de la page et activer la transition
-        setTimeout(function() {
-            terminalLoader.style.opacity = 1;
-            terminalLoader.style.transition = 'opacity 0.5s ease-in-out';
-        }, 10);
-
-        // Ensuite, soumet le formulaire après un court délai pour afficher le loader
-        setTimeout(function() {
-            uploadBtn.closest('form').submit();
-        }, 500); // Ajustez le délai selon vos besoins
-    });
-});
-
-
-
-</script>
-        
     
-      
+      <div class="terminal-loader">
+          <div class="terminal-header">
+              <div class="terminal-title">Status</div>
+              <div class="terminal-controls">
+                  <div class="control close"></div>
+                  <div class="control minimize"></div>
+                  <div class="control maximize"></div>
+              </div>
+          </div>
+          <div class="text">Loading...</div>
+      </div>
+    
+      <div class="palette">
+          <div class="color">
+              <div class="default-text">Class 0</div>
+              <span>Healthy</span>
+              <div class="color-description">The plant is in excellent condition.</div>
+          </div>
+          <div class="color">
+              <div class="default-text">Class 1</div>
+              <span>Not Bad</span>
+              <div class="color-description">The plant is doing okay but needs some care.</div>
+          </div>
+          <div class="color">
+              <div class="default-text">Class 2</div>
+              <span>Sick</span>
+              <div class="color-description">The plant is sick and requires immediate attention.</div>
+          </div>
+          <div class="color">
+              <div class="default-text">Class 3</div>
+              <span>Dying</span>
+              <div class="color-description">The plant is in critical condition.</div>
+          </div>
+      </div>
+    <center>
+      <div class="card-container">
+          <div class="card">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+          </div>
+          <div class="card">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+          </div>
+      </div>
+    </center>
+    <script src="{% static 'LOAD.js' %}"></script>
     
     <footer class="py-2 bg-dark fixed-bottom">
         <ul class="example-2">
