@@ -6,7 +6,7 @@
     <title>Upload Image</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'FORME.css' %}"> 
+    <link rel="stylesheet" href="{% static 'Upform.css' %}"> 
 </head>
 <body>
     <!-- Barre de navigation Bootstrap -->
@@ -34,33 +34,21 @@
     <div>
         <p>testttttttt </p>
     </div>
-
-    <body>
       <div class="containerr">
-          <div class="upload-form" id="uploadForm">
-              <center>
-                  <h2 class="text-center mb-4">Upload Image</h2>
-                  <form method="post" enctype="multipart/form-data">
-                      {% csrf_token %}
-                      {{ form.as_p }}
-                      <center><button type="submit" class="button2" id="uploadBtn">Upload</button></center>
-                  </form>
-              </center>
-          </div>
+        <div class="upload-form" id="uploadForm">
+          <center>
+            <h2 class="text-center mb-4">Upload Image</h2>
+            <form method="post" enctype="multipart/form-data" id="uploadFormElem">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <center><button type="submit" class="button2" id="uploadBtn">Upload</button></center>
+            </form>
+          </center>
+        </div>
       </div>
-    
-      <div class="terminal-loader">
-          <div class="terminal-header">
-              <div class="terminal-title">Status</div>
-              <div class="terminal-controls">
-                  <div class="control close"></div>
-                  <div class="control minimize"></div>
-                  <div class="control maximize"></div>
-              </div>
-          </div>
-          <div class="text">Loading...</div>
-      </div>
-    
+      <div class="loader" id="loader"></div>
+      <script src="{% static 'FORM.js' %}"></script>
+
       <div class="palette">
           <div class="color">
               <div class="default-text">Class 0</div>
@@ -93,7 +81,6 @@
           </div>
       </div>
     </center>
-    <script src="{% static 'LOAD.js' %}"></script>
     
     <footer class="py-2 bg-dark fixed-bottom">
         <ul class="example-2">
