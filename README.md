@@ -5,7 +5,17 @@
 - [![rembg](https://img.shields.io/badge/rembg-2.0.28-blue)](https://pypi.org/project/rembg/)
 - [![Google AI Studio API Key](https://img.shields.io/badge/Gemini-red)](https://aistudio.google.com/app/apikey)
 - [![Repository U-net for plant segmentation](https://img.shields.io/badge/UNet-purple)](https://github.com/FouadHellal/U-net-for-plant-segmentation.git)
-
+- [![Keras](https://img.shields.io/badge/keras-2.6.0-orange)](https://keras.io/)
+- [![TensorFlow](https://img.shields.io/badge/tensorflow-2.6.0-orange)](https://www.tensorflow.org/)
+- [![PyTorch](https://img.shields.io/badge/pytorch-1.9.0-red)](https://pytorch.org/)
+- [![OpenCV](https://img.shields.io/badge/opencv-4.5.3-blue)](https://opencv.org/)
+- [![Scikit-learn](https://img.shields.io/badge/scikit--learn-0.24.2-orange)](https://scikit-learn.org/)
+- [![NumPy](https://img.shields.io/badge/numpy-1.21.1-blue)](https://numpy.org/)
+- [![Pandas](https://img.shields.io/badge/pandas-1.3.1-blue)](https://pandas.pydata.org/)
+- [![Matplotlib](https://img.shields.io/badge/matplotlib-3.4.2-blue)](https://matplotlib.org/)
+- [![Seaborn](https://img.shields.io/badge/seaborn-0.11.1-blue)](https://seaborn.pydata.org/)
+- [![SciPy](https://img.shields.io/badge/scipy-1.7.1-blue)](https://scipy.org/)
+- [![Jupyter](https://img.shields.io/badge/jupyter-1.0.0-orange)](https://jupyter.org/)
 
 ## Synopsis 
 - [Features](#features)
